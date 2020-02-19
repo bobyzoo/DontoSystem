@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ul#menu li div a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul#menu li div a:hover{
+    color: #53b593;
+    transition: 0.3s;
+
+}
+
+ul#menu{
+    background-color: rgba(52,58,64,0.95);
+    padding: 10px;
+    border: 2px solid rgba(52,58,64,0.95);
+    border-radius: 0 0 20px  20px;
+;
+}
+
+
+.quadrado-selecao{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    color: white;
+    background-color: #2e8667;
+    padding: 50px 0;
+    border-radius: 20px  20px;
+    text-align: center;
+    margin-right: 5px;
+}
+.img{
+    width: 25%;
+}
+.quadrado-selecao:hover{
+    background-color: #99d0bf;
+    transition: 0.3s;
+    /*opacity: 0.4;*/
+}
+.quadrado-selecao:hover i{
+    color: #2e8667;
+    transition: 0.3s;
+}
+.quadrado-selecao:hover p{
+    transition: 0.3s;
+    color: #2e8667;
+}
+
+.quadrado-selecao p{
+    font-family: "Open Sans" , sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px;
+}
+
+#formulario{
+    background-color: #62686e;
+    /*opacity: 0.5;*/
+    border-radius: 5px  5px;
+    color: white;
+}
+.select-horario{
+    text-transform: uppercase;
+}
+.select-horario option{
+    text-transform: uppercase;
+}
+#btn-enviar {
+    background-color: #2e8667;
+    color: white;
+}
+#btn-contato{
+    background-color: #2e8667;
+    color: white;
+}
+
+#form-title{
+    border-bottom: 2px solid #4b4f54;
+}
+
+#rodape{
+    color: white;
+    padding-top: 20px;
+
+}
+.container-med{
+    margin: 10px 0;
+}
+
+.row-med{
+    padding: 10px ;
+    background-color: #53b593;
+    border-radius: 10px  10px;
+}
