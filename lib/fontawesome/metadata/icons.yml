@@ -31833,7 +31833,7 @@ street-view:
     - '4.3'
     - 5.0.0
     - 5.2.0
-  label: Street View
+  label: Street ViewController
   search:
     terms:
       - directions

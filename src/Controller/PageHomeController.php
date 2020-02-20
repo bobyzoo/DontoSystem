@@ -1,5 +1,5 @@
 <?php
-require_once "View.php";
+require_once "ViewController.php";
 
 class PageHomeController
 {
@@ -9,17 +9,18 @@ class PageHomeController
 
     public function __construct()
     {
-        $v = new View();
+        $v = new ViewController();
         $this->setView($v);
     }
 
     /**
      */
     public function page_home(){
-        $this->getView()->load('Page','Cabecalho');
-        $this->getView()->load('Page','PageHome');
-        $this->getView()->load('Page','FormConsulta');
-        $this->getView()->load('Page','Rodape');
+        require_once "../../Templates/Page/PageHome.php";
+//        $this->getView()->load('Page','Cabecalho');
+//        $this->getView()->load('Page','PageHome');
+//        $this->getView()->load('Page','FormConsulta');
+//        $this->getView()->load('Page','Rodape');
     }
 
     public function page_profissionais(){
@@ -37,7 +38,7 @@ class PageHomeController
 
 
     /**
-     * @return View
+     * @return ViewController
      */
     public function getView()
     {
@@ -45,7 +46,7 @@ class PageHomeController
     }
 
     /**
-     * @param View $View
+     * @param ViewController $View
      */
     public function setView($View)
     {

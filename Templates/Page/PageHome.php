@@ -1,4 +1,6 @@
-
+<?php
+require_once "Cabecalho.php";
+?>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -46,3 +48,7 @@
             <p>aparelho odontológico</p></div>
     </div>
 </div>
+<?php
+require_once "FormConsulta.php";
+require_once "Rodape.php";
+

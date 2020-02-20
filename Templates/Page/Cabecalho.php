@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./lib/fontawesome/css/all.css">
 
 
-
     <!-- Import JS  -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -40,29 +39,29 @@
         <!--        <img src="img/logo1.png">-->
         <li class="nav-item">
             <div>
-                <a class="nav-link active" href="index.php?m=PageHome&a=page_home">HOME</a>
+                <a class="nav-link active" href="<?= URL_BASE ?>">HOME</a>
             </div>
         </li>
         <li class="nav-item">
             <div>
-                <a class="nav-link active" href="index.php?m=PageHome&a=page_profissionais">PROFISSIONAIS</a>
+                <a class="nav-link active" href="<?= URL_BASE ?>/profissionais">PROFISSIONAIS</a>
             </div>
         </li>
         <li class="nav-item">
             <div>
-                <a class="nav-link active" href="index.php?m=PageHome&a=load_page_home">Convênio</a>
+                <a class="nav-link active" href="<?= URL_BASE ?>/convenio">Convênio</a>
             </div>
         </li>
         <li class="nav-item mr-auto">
             <div>
-                <a class="nav-link active" href="index.php?m=PageHome&a=page_contato">CONTATO</a>
+                <a class="nav-link active" href="<?= URL_BASE ?>/contato">CONTATO</a>
             </div>
         </li>
 
         <ul style="list-style: none">
             <li class="nav-item ">
                 <div>
-                    <a class="nav-link active" href="index.php?m=PageLogin&a=page_login" >ENTRAR</a>
+                    <a class="nav-link active" href="<?= URL_BASE?>/login">ENTRAR</a>
                 </div>
             </li>
         </ul>

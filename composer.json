@@ -1,0 +1,29 @@
+{
+  "name": "bobyzoo/DontoSystem",
+  "description": "projeto de dentista",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gabriel S Vargas",
+      "email": "gabrieldossantosvargas@gmail.com",
+      "role": "Developer",
+      "homepage": "http://gabrieldsvr.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "src/"
+    },
+    "files": [
+      "src/Config.php"
+    ]
+  },
+  "require": {
+    "coffeecode/router": "1.0.*",
+    "coffeecode/datalayer": "1.1.*"
+  }
+}

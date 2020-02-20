@@ -1,5 +1,5 @@
 <?php
-require_once "View.php";
+require_once "ViewController.php";
 require_once "Model/UsuarioDAO.php";
 
 
@@ -11,7 +11,7 @@ class DashboardController
 
     public function __construct()
     {
-        $v = new View();
+        $v = new ViewController();
         $this->setView($v);
     }
 
@@ -45,7 +45,7 @@ class DashboardController
 
 
     /**
-     * @return View
+     * @return ViewController
      */
     public function getView()
     {
@@ -53,7 +53,7 @@ class DashboardController
     }
 
     /**
-     * @param View $View
+     * @param ViewController $View
      */
     public function setView($View)
     {

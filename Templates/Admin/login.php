@@ -1,3 +1,7 @@
+
+<?php
+require_once __DIR__."/../Page/Cabecalho.php";
+?>
 <div class="container-fluid">
     <div class="row mt-5">
         <form class="mr-auto text-center ml-auto" method="post" action="../../admin/ajax/ajax.login.php" id="formLogin">
@@ -9,7 +13,6 @@
             <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
         </form>
     </div>
-
 </div>
 <h2 id="errolog">Usuário ou senha errados!</h2>
 <footer id="rodape" class="bg-dark" style="width: 100%;bottom: 0;position: absolute">

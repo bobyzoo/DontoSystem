@@ -1,6 +1,27 @@
 <?php
-require_once "Model/Connection.php";
-require_once "Model/AgendaDAO.php";
-echo '<pre>';
-print_r(AgendaDAO::all());
-echo '</pre>';
+
+
+require_once __DIR__."/vendor/autoload.php";
+
+
+
+
+use Source\Models\User;
+
+//
+//$user = new User();
+//$list = $user->find()->fetch(true);
+//
+//
+///** @var User $item */
+//foreach ($list as $item) {
+//    var_dump($item->user_name);
+//}
+
+
+
+$user = new User();
+
+$result = $user->checkPassword('bobyzoo','admin');
+
+var_dump($result);

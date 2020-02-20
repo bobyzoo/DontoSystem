@@ -1,5 +1,5 @@
 <?php
-require_once "View.php";
+require_once "ViewController.php";
 require_once "Model/UsuarioDAO.php";
 
 class PageLoginController
@@ -8,7 +8,7 @@ class PageLoginController
 
     public function __construct()
     {
-        $v = new View();
+        $v = new ViewController();
         $this->setView($v);
     }
 
@@ -46,7 +46,7 @@ class PageLoginController
     }
 
     /**
-     * @return View
+     * @return ViewController
      */
     public function getView()
     {
@@ -54,7 +54,7 @@ class PageLoginController
     }
 
     /**
-     * @param View $View
+     * @param ViewController $View
      */
     public function setView($View)
     {

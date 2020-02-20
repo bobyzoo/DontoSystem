@@ -1,3 +1,6 @@
+<?php
+require_once "Cabecalho.php";
+?>
 <div class="container-fluid">
     <div class="row container-med">
         <div class="col-8 offset-2 row-med">
@@ -76,4 +79,6 @@
         </div>
     </div>
 </div>
+<?php
+require_once "Rodape.php";
 

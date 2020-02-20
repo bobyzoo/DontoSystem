@@ -1,4 +1,7 @@
-
+<?php
+require_once "Cabecalho.php";
+require_once "FormContato.php";
+?>
 <footer id="rodape" class="bg-dark" style="width: 100%;bottom: 0;position: absolute">
     <div class="container-fluid ">
         <div class="row">

@@ -1,5 +1,5 @@
 <?php
-require_once "View.php";
+require_once "ViewController.php";
 require_once "Model/UsuarioDAO.php";
 
 class PageAdminController
@@ -9,7 +9,7 @@ class PageAdminController
 
     public function __construct()
     {
-        $v = new View();
+        $v = new ViewController();
         $this->setView($v);
     }
 
@@ -37,7 +37,7 @@ class PageAdminController
     }
 
     /**
-     * @return View
+     * @return ViewController
      */
     public function getView()
     {
@@ -45,7 +45,7 @@ class PageAdminController
     }
 
     /**
-     * @param View $View
+     * @param ViewController $View
      */
     public function setView($View)
     {
