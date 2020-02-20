@@ -1,0 +1,29 @@
+{
+  "name": "bobyzoo/DontoSystem",
+  "description": "projeto de dentista",
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gabriel S Vargas",
+      "email": "gabrieldossantosvargas@gmail.com",
+      "role": "Developer",
+      "homepage": "http://gabrieldsvr.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "src/"
+    },
+    "files": [
+      "src/Config.php"
+    ]
+  },
+  "require": {
+    "phpmailer/phpmailer": "6.0.*"
+  }
+}
