@@ -55,5 +55,17 @@ class User extends DataLayer
         return false;
     }
 
+    /**
+     * @return bool
+     */
+    public static function checkConnection(){
+        session_start();
+        if(isset($_SESSION['conectado']) and $_SESSION['conectado'] == '1'){
+            return true;
+        }
+        return false;
+    }
+
+
 
 }

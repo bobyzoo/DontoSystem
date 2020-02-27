@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "/Connection.php";
 require_once __DIR__ . "/../vendor/autoload.php";
+
 use CoffeeCode\DataLayer\Connect;
 
 class UsuarioDAO
@@ -45,10 +46,10 @@ class UsuarioDAO
      * @return bool
      */
     public static function verificaConexao(){
-//        if(isset($_SESSION['conectado']) and $_SESSION['conectado'] == '1'){
-//            return true;
-//        }
-//        return false;
+        if(isset($_SESSION['conectado']) and $_SESSION['conectado'] == '1'){
+            return true;
+        }
+        return false;
     }
 
     /**

@@ -2,10 +2,8 @@
 
 namespace Source\Controller;
 
+use Source\Models\User;
 
-use UsuarioDAO;
-
-require_once __DIR__ . "/../../Model/UsuarioDAO.php";
 
 
 class Login
@@ -13,8 +11,7 @@ class Login
 
     public function login()
     {
-        session_start();
-        if (UsuarioDAO::verificaConexao()) {
+        if (User::checkConnection()) {
             header("Location: index.php");
             die();
         }
